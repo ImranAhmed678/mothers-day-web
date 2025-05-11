@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Mother's Day!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="floating-stars"></div>
+
+  <div class="container">
+    <h1>Happy Mother's Day! 💖</h1>
+    <p>To the most wonderful mom in the world.</p>
+    <button onclick="showEnvelope()">Open the Letter 💌</button>
+  </div>
+
+  <div class="popup" id="popup">
+    <div class="envelope-container">
+      <div class="envelope" id="envelope" onclick="openEnvelope()">
+        <div class="flap" id="flap"></div>
+        <div class="front">
+          <div class="heart">❤️</div>
+        </div>
+      </div>
+      <div class="letter-content" id="letterContent">
+        <h2>Dear Mom,</h2>
+        <p id="typed-text"></p>
+        <button onclick="closePopup()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <audio id="bg-music" autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/17/audio_190522bb9e.mp3?filename=you-are-my-sunshine-11274.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
